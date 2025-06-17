@@ -218,6 +218,24 @@ export default function DreamsPage() {
           fontSize: 1.4rem;
           color: #e94560;
         }
+
+        @media (max-width: 768px) {
+          .back-button {
+            top: 1rem;
+            left: 1rem;
+            padding: 0.6rem 1rem;
+            fontSize: 1rem;
+          }
+          .back-button::before {
+            fontSize: 1.2rem;
+          }
+          button {
+            width: 90% !important;
+            max-width: 280px !important;
+            padding: 1rem !important;
+            fontSize: 1.2rem !important;
+          }
+        }
       `}</style>
       <div className="wave-container">
         <div className="wave"></div>

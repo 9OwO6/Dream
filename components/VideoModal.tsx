@@ -37,6 +37,15 @@ export default function VideoModal({ isOpen, videoSrc, onClose }: VideoModalProp
       }}
       onClick={onClose}
     >
+      <style jsx>{`
+        @media (max-width: 768px) {
+          video {
+            width: 100% !important;
+            height: auto !important;
+            max-height: 100vh !important;
+          }
+        }
+      `}</style>
       <video
         ref={videoRef}
         src={videoSrc}
