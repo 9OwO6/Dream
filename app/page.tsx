@@ -110,12 +110,12 @@ export default function Home() {
 
         @media (max-width: 768px) {
           button {
-            fontSize: 3rem !important;
+            fontSize: 2rem !important;
             letterSpacing: 0.2rem !important;
           }
           
           p {
-            fontSize: 1.2rem !important;
+            fontSize: 1.8rem !important;
             textAlign: center !important;
             padding: 0 1rem !important;
             maxWidth: 90% !important;
@@ -130,7 +130,7 @@ export default function Home() {
       <button
         onClick={() => router.push('/dreams')}
         style={{
-          fontSize: '8rem',
+          fontSize: '2.5rem',
           fontWeight: 'bold',
           color: '#1a365d',
           cursor: 'pointer',
@@ -145,7 +145,7 @@ export default function Home() {
           position: 'relative',
           zIndex: 1,
           fontFamily: 'monospace',
-          letterSpacing: '0.5rem'
+          letterSpacing: '0.2rem'
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.transform = 'scale(1.15) rotate(2deg)';
@@ -161,7 +161,7 @@ export default function Home() {
       <p
         style={{
           marginTop: '2rem',
-          fontSize: '1.5rem',
+          fontSize: '2.5rem',
           color: '#4a5568',
           cursor: 'pointer',
           transition: 'all 0.3s ease',
