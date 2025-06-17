@@ -17,7 +17,7 @@ export default function Home() {
         justifyContent: 'center',
         background: 'linear-gradient(135deg, #e1f0ff 0%, #c5e1ff 50%, #ffffff 100%)',
         margin: 0,
-        padding: 0,
+        padding: '1rem',
         position: 'fixed',
         top: 0,
         left: 0,
@@ -29,156 +29,71 @@ export default function Home() {
         @keyframes dreamWave {
           0% {
             background: 
-              radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.9) 0%, transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(200, 230, 255, 0.9) 0%, transparent 50%),
-              radial-gradient(circle at 50% 50%, rgba(180, 220, 255, 0.8) 0%, transparent 70%),
+              radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.8) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(197, 225, 255, 0.8) 0%, transparent 50%),
               linear-gradient(135deg, #e1f0ff 0%, #c5e1ff 50%, #ffffff 100%);
-            filter: hue-rotate(0deg) saturate(1.2) blur(0px);
+            filter: hue-rotate(0deg) saturate(1.2) brightness(1.1);
           }
           25% {
             background: 
-              radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9) 0%, transparent 50%),
-              radial-gradient(circle at 70% 70%, rgba(200, 230, 255, 0.9) 0%, transparent 50%),
-              radial-gradient(circle at 40% 40%, rgba(180, 220, 255, 0.8) 0%, transparent 70%),
-              linear-gradient(135deg, #d4e8ff 0%, #b8d8ff 50%, #ffffff 100%);
-            filter: hue-rotate(30deg) saturate(1.3) blur(1px);
+              radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8) 0%, transparent 50%),
+              radial-gradient(circle at 70% 70%, rgba(197, 225, 255, 0.8) 0%, transparent 50%),
+              linear-gradient(135deg, #e1f0ff 0%, #c5e1ff 50%, #ffffff 100%);
+            filter: hue-rotate(90deg) saturate(1.3) brightness(1.2);
           }
           50% {
             background: 
-              radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.9) 0%, transparent 50%),
-              radial-gradient(circle at 60% 60%, rgba(200, 230, 255, 0.9) 0%, transparent 50%),
-              radial-gradient(circle at 50% 50%, rgba(180, 220, 255, 0.8) 0%, transparent 70%),
-              linear-gradient(135deg, #c5e1ff 0%, #a8cfff 50%, #ffffff 100%);
-            filter: hue-rotate(60deg) saturate(1.4) blur(2px);
+              radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.8) 0%, transparent 50%),
+              radial-gradient(circle at 60% 60%, rgba(197, 225, 255, 0.8) 0%, transparent 50%),
+              linear-gradient(135deg, #e1f0ff 0%, #c5e1ff 50%, #ffffff 100%);
+            filter: hue-rotate(180deg) saturate(1.4) brightness(1.3);
           }
           75% {
             background: 
-              radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9) 0%, transparent 50%),
-              radial-gradient(circle at 70% 70%, rgba(200, 230, 255, 0.9) 0%, transparent 50%),
-              radial-gradient(circle at 60% 60%, rgba(180, 220, 255, 0.8) 0%, transparent 70%),
-              linear-gradient(135deg, #d4e8ff 0%, #b8d8ff 50%, #ffffff 100%);
-            filter: hue-rotate(30deg) saturate(1.3) blur(1px);
+              radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8) 0%, transparent 50%),
+              radial-gradient(circle at 70% 70%, rgba(197, 225, 255, 0.8) 0%, transparent 50%),
+              linear-gradient(135deg, #e1f0ff 0%, #c5e1ff 50%, #ffffff 100%);
+            filter: hue-rotate(270deg) saturate(1.3) brightness(1.2);
           }
           100% {
             background: 
-              radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.9) 0%, transparent 50%),
-              radial-gradient(circle at 80% 80%, rgba(200, 230, 255, 0.9) 0%, transparent 50%),
-              radial-gradient(circle at 50% 50%, rgba(180, 220, 255, 0.8) 0%, transparent 70%),
+              radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.8) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(197, 225, 255, 0.8) 0%, transparent 50%),
               linear-gradient(135deg, #e1f0ff 0%, #c5e1ff 50%, #ffffff 100%);
-            filter: hue-rotate(0deg) saturate(1.2) blur(0px);
+            filter: hue-rotate(360deg) saturate(1.2) brightness(1.1);
           }
         }
 
         @keyframes float {
           0%, 100% {
-            transform: translateY(0) rotate(0deg) scale(1) skew(0deg);
+            transform: translateY(0) rotate(0deg);
           }
           25% {
-            transform: translateY(-20px) rotate(2deg) scale(1.05) skew(2deg);
+            transform: translateY(-10px) rotate(2deg);
           }
           50% {
-            transform: translateY(-10px) rotate(-2deg) scale(1.1) skew(-2deg);
+            transform: translateY(0) rotate(0deg);
           }
           75% {
-            transform: translateY(-15px) rotate(1deg) scale(1.08) skew(1deg);
+            transform: translateY(10px) rotate(-2deg);
           }
         }
 
         @keyframes glow {
           0%, 100% {
-            text-shadow: 0 0 20px rgba(255, 255, 255, 0.7),
-                         0 0 40px rgba(255, 255, 255, 0.5),
-                         0 0 60px rgba(255, 255, 255, 0.3),
-                         0 0 80px rgba(255, 255, 255, 0.2);
-            filter: brightness(1) contrast(1.1) hue-rotate(0deg);
+            text-shadow: 
+              0 0 10px rgba(255, 255, 255, 0.8),
+              0 0 20px rgba(255, 255, 255, 0.6),
+              0 0 30px rgba(255, 255, 255, 0.4),
+              0 0 40px rgba(255, 255, 255, 0.2);
           }
           50% {
-            text-shadow: 0 0 30px rgba(255, 255, 255, 0.9),
-                         0 0 50px rgba(255, 255, 255, 0.7),
-                         0 0 70px rgba(255, 255, 255, 0.5),
-                         0 0 90px rgba(255, 255, 255, 0.3);
-            filter: brightness(1.2) contrast(1.2) hue-rotate(30deg);
+            text-shadow: 
+              0 0 15px rgba(255, 255, 255, 0.9),
+              0 0 25px rgba(255, 255, 255, 0.7),
+              0 0 35px rgba(255, 255, 255, 0.5),
+              0 0 45px rgba(255, 255, 255, 0.3);
           }
-        }
-
-        @keyframes waveLine {
-          0% {
-            transform: translateX(-100%) rotate(0deg) scale(1);
-            opacity: 0.3;
-          }
-          50% {
-            transform: translateX(0%) rotate(180deg) scale(1.5);
-            opacity: 0.6;
-          }
-          100% {
-            transform: translateX(100%) rotate(360deg) scale(1);
-            opacity: 0.3;
-          }
-        }
-
-        @keyframes chaosWave {
-          0% {
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-          }
-          25% {
-            clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
-          }
-          50% {
-            clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
-          }
-          75% {
-            clip-path: polygon(5% 0%, 95% 0%, 95% 100%, 5% 100%);
-          }
-          100% {
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-          }
-        }
-
-        .wave-container {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-          pointer-events: none;
-          animation: chaosWave 10s ease-in-out infinite;
-        }
-
-        .wave {
-          position: absolute;
-          width: 200%;
-          height: 200%;
-          background: linear-gradient(45deg, 
-            transparent 0%,
-            rgba(255, 255, 255, 0.1) 25%,
-            transparent 50%,
-            rgba(255, 255, 255, 0.1) 75%,
-            transparent 100%
-          );
-          animation: waveLine 15s linear infinite;
-        }
-
-        .wave:nth-child(2) {
-          animation-delay: -5s;
-          transform: scale(1.5) rotate(45deg);
-          background: linear-gradient(-45deg, 
-            transparent 0%,
-            rgba(255, 255, 255, 0.15) 25%,
-            transparent 50%,
-            rgba(255, 255, 255, 0.15) 75%,
-            transparent 100%
-          );
-        }
-
-        .wave:nth-child(3) {
-          animation-delay: -10s;
-          transform: scale(2) rotate(-45deg);
-          background: linear-gradient(90deg, 
-            transparent 0%,
-            rgba(255, 255, 255, 0.2) 25%,
-            transparent 50%,
-            rgba(255, 255, 255, 0.2) 75%,
-            transparent 100%
-          );
         }
 
         .noise {
@@ -192,13 +107,23 @@ export default function Home() {
           pointer-events: none;
           animation: float 20s ease-in-out infinite;
         }
+
+        @media (max-width: 768px) {
+          button {
+            fontSize: 4rem !important;
+            letterSpacing: 0.3rem !important;
+          }
+          
+          p {
+            fontSize: 1.2rem !important;
+            textAlign: center !important;
+            padding: 0 1rem !important;
+            maxWidth: 90% !important;
+            margin: 1rem auto !important;
+          }
+        }
       `}</style>
       <div className="noise"></div>
-      <div className="wave-container">
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-      </div>
       <button
         onClick={() => router.push('/dreams')}
         style={{
