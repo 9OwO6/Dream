@@ -110,8 +110,8 @@ export default function Home() {
 
         @media (max-width: 768px) {
           button {
-            fontSize: 4rem !important;
-            letterSpacing: 0.3rem !important;
+            fontSize: 3rem !important;
+            letterSpacing: 0.2rem !important;
           }
           
           p {
@@ -156,7 +156,7 @@ export default function Home() {
           e.currentTarget.style.textShadow = '2px 2px 4px rgba(0,0,0,0.1)';
         }}
       >
-        dream
+        Ｄｒｅａｍ
       </button>
       <p
         style={{
