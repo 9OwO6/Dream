@@ -156,7 +156,7 @@ export default function Home() {
           e.currentTarget.style.textShadow = '2px 2px 4px rgba(0,0,0,0.1)';
         }}
       >
-        ｄｒｅａｍ
+        dream
       </button>
       <p
         style={{
