@@ -26,7 +26,7 @@ export default function DreamsPage() {
         justifyContent: 'center',
         background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
         margin: 0,
-        padding: 0,
+        padding: '1rem',
         position: 'fixed',
         top: 0,
         left: 0,
@@ -187,10 +187,10 @@ export default function DreamsPage() {
 
         .back-button {
           position: fixed;
-          top: 2rem;
-          left: 2rem;
-          padding: 0.8rem 1.5rem;
-          fontSize: 1.2rem;
+          top: 1rem;
+          left: 1rem;
+          padding: 0.6rem 1.2rem;
+          fontSize: 1rem;
           fontWeight: bold;
           color: #e94560;
           backgroundColor: rgba(255, 255, 255, 0.15);
@@ -215,25 +215,20 @@ export default function DreamsPage() {
 
         .back-button::before {
           content: '←';
-          fontSize: 1.4rem;
+          fontSize: 1.2rem;
           color: #e94560;
         }
 
         @media (max-width: 768px) {
           .back-button {
-            top: 1rem;
-            left: 1rem;
-            padding: 0.6rem 1rem;
-            fontSize: 1rem;
+            top: 0.8rem;
+            left: 0.8rem;
+            padding: 0.5rem 1rem;
+            fontSize: 0.9rem;
           }
+
           .back-button::before {
-            fontSize: 1.2rem;
-          }
-          button {
-            width: 90% !important;
-            max-width: 280px !important;
-            padding: 1rem !important;
-            fontSize: 1.2rem !important;
+            fontSize: 1.1rem;
           }
         }
       `}</style>
@@ -249,15 +244,24 @@ export default function DreamsPage() {
       >
         Back
       </button>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', position: 'relative', zIndex: 2 }}>
+      <div style={{ 
+        display: 'flex', 
+        flexDirection: 'column', 
+        gap: '1.5rem',
+        position: 'relative', 
+        zIndex: 2,
+        width: '100%',
+        maxWidth: '300px',
+        padding: '0 1rem'
+      }}>
         {dreams.map((dream, index) => (
           <button
             key={dream.id}
             onClick={() => setVideo(dream.video)}
             style={{
-              width: '300px',
-              padding: '1.5rem',
-              fontSize: '1.5rem',
+              width: '100%',
+              padding: '1.2rem',
+              fontSize: '1.2rem',
               fontWeight: 'bold',
               color: '#1a365d',
               backgroundColor: 'rgba(255, 255, 255, 0.2)',
