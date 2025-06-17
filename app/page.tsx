@@ -120,6 +120,9 @@ export default function Home() {
             padding: 0 1rem !important;
             maxWidth: 90% !important;
             margin: 1rem auto !important;
+            lineHeight: 1.6 !important;
+            whiteSpace: 'pre-wrap' !important;
+            wordBreak: 'break-word' !important;
           }
         }
       `}</style>
@@ -153,7 +156,7 @@ export default function Home() {
           e.currentTarget.style.textShadow = '2px 2px 4px rgba(0,0,0,0.1)';
         }}
       >
-        D R E A M
+        ｄｒｅａｍ
       </button>
       <p
         style={{
@@ -168,7 +171,12 @@ export default function Home() {
           position: 'relative',
           zIndex: 1,
           fontFamily: 'monospace',
-          letterSpacing: '0.2rem'
+          letterSpacing: '0.2rem',
+          textAlign: 'center',
+          maxWidth: '600px',
+          lineHeight: '1.6',
+          whiteSpace: 'pre-wrap',
+          wordBreak: 'break-word'
         }}
         onClick={() => router.push('/dreams')}
         onMouseEnter={(e) => {
@@ -182,7 +190,7 @@ export default function Home() {
           e.currentTarget.style.transform = 'skew(0deg)';
         }}
       >
-        Click to enter the world of dreams
+        Click to{'\n'}enter the{'\n'}world of dreams
       </p>
     </div>
   );
