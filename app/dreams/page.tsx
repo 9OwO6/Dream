@@ -24,16 +24,26 @@ export default function DreamsPage() {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
         margin: 0,
         padding: '1rem',
         position: 'fixed',
         top: 0,
         left: 0,
-        animation: 'dreamWave 15s ease-in-out infinite',
         overflow: 'hidden'
       }}
     >
+      <div 
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+          animation: 'dreamWave 15s ease-in-out infinite',
+          zIndex: 0
+        }}
+      />
       <style jsx>{`
         @keyframes dreamWave {
           0% {
@@ -129,7 +139,7 @@ export default function DreamsPage() {
           width: 200%;
           height: 100%;
           pointer-events: none;
-          z-index: 1;
+          z-index: 2;
         }
 
         .wave {
@@ -183,6 +193,7 @@ export default function DreamsPage() {
           opacity: 0.05;
           pointer-events: none;
           animation: float 20s ease-in-out infinite;
+          z-index: 3;
         }
 
         .back-button {
@@ -199,7 +210,7 @@ export default function DreamsPage() {
           borderRadius: 10px;
           cursor: pointer;
           transition: all 0.3s ease;
-          zIndex: 10;
+          zIndex: 5;
           display: flex;
           alignItems: center;
           gap: 0.5rem;
@@ -249,7 +260,7 @@ export default function DreamsPage() {
         flexDirection: 'column', 
         gap: '1.5rem',
         position: 'relative', 
-        zIndex: 2,
+        zIndex: 4,
         width: '100%',
         maxWidth: '300px',
         padding: '0 1rem'
